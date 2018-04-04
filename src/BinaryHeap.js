@@ -20,13 +20,13 @@ export default class BinaryHeap<T> {
     return this.size === 0;
   };
 
-  push = (value: T): void => {
+  push: T => void = value => {
     this._heap.push(value);
     this._siftUp(this._heap.length - 1);
   };
 
-  pop = (): T | void => {
-    const value = this.peek();
+  pop: () => T = () => {
+    const value: any = this.peek();
     const lastIndex = this.size - 1;
     if (lastIndex > ROOT_INDEX) {
       this._swap(ROOT_INDEX, lastIndex);

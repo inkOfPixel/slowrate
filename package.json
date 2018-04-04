@@ -30,7 +30,8 @@
     "prettier": "1.11.1",
     "uglifyjs-webpack-plugin": "1.2.4",
     "webpack": "4.4.1",
-    "webpack-cli": "^2.0.13",
+    "webpack-cli": "2.0.13",
+    "lodash": "4.17.5",
     "webpack-node-externals": "1.7.2"
   },
   "scripts": {
@@ -38,7 +39,5 @@
     "flow-typed": "flow-typed install -s",
     "test": "jest"
   },
-  "dependencies": {
-    "lodash": "4.17.5"
-  }
+  "dependencies": {}
 }
