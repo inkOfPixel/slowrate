@@ -16,7 +16,7 @@ npm i slowrate
 
 ## The problem
 
-You need to use an API that allows only a certain number of the request to be made in a given interval.
+You need to use an API that allows only a certain number of the request to be made in a given interval but don't want to bother implementing your rate limit solution.
 
 ## The solution
 
