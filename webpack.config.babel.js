@@ -12,7 +12,8 @@ export default () => ({
     path: path.resolve(__dirname, "./dist"),
     filename: `${packageJson.name}.js`,
     library: upperFirst(camelCase(packageJson.name)),
-    libraryTarget: "umd"
+    libraryTarget: "umd",
+    globalObject: "this"
   },
   externals: [nodeExternals()],
   module: {
