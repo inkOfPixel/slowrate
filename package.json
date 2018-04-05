@@ -1,6 +1,6 @@
 {
   "name": "slowrate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A blazing slow library to deal with rate limited APIs",
   "keywords": [
     "bottleneck",
@@ -15,6 +15,7 @@
   "author": "Massimo De Marchi <massimodemarchi91@gmail.com> (https://github.com/macs91)",
   "license": "MIT",
   "main": "dist/slowrate.js",
+  "module": "src/index.js",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
