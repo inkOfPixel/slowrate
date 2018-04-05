@@ -1,6 +1,6 @@
 {
   "name": "slowrate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A blazing slow library to deal with rate limited APIs",
   "keywords": [
     "bottleneck",
@@ -23,6 +23,7 @@
     "babel-loader": "7.1.4",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-flow": "6.23.0",
     "babel-preset-stage-3": "6.24.1",
@@ -42,5 +43,7 @@
     "flow-typed": "flow-typed install -s",
     "test": "jest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-runtime": "6.26.0"
+  }
 }
