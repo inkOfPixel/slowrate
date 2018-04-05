@@ -44,3 +44,31 @@ Creates a new `SlowRate` instance.
 #### Return value
 
 A `SlowRate` instance.
+
+### `.submit(wrappedPromise, [priority])`
+
+Submit a promise to the slowrate queue.
+
+#### `wrappedPromise`
+
+A `function` that returns a `Promise`. This is called by the slowrate instance to start the promise.
+
+#### `priority`
+
+An optional `number` that represents the priority of the request (request with higher priorities are resolved first). Defaults to `0`.
+
+#### Return value
+
+A `Promise` that resolves to the result of the passed promise (or reject with the rejection error).
+
+### `.queueSize()`
+
+The number of promises enqueued in the slowrate instance.
+
+#### Return value
+
+A `number` that represents the number of promises enqueued in the slowrate instance.
+
+## LICENSE
+
+MIT
