@@ -1,7 +1,4 @@
 {
-	"presets": ["flow", "env", "stage-3"],
-	"plugins": [
-		"transform-class-properties",
-		"babel-plugin-transform-object-rest-spread"
-	]
+  "presets": ["flow", "env", "stage-3"],
+  "plugins": ["transform-class-properties", "transform-runtime"]
 }
